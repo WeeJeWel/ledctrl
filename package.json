@@ -1,5 +1,5 @@
 {
-  "name": "node-ledctrl",
+  "name": "ledctrl",
   "version": "1.0.0",
   "description": "LedCtrl client for Node.js",
   "main": "index.js",
