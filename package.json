@@ -1,0 +1,27 @@
+{
+  "name": "node-ledctrl",
+  "version": "1.0.0",
+  "description": "LedCtrl client for Node.js",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/WeeJeWel/node-ledctrl.git"
+  },
+  "author": "Emile Nijssen",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/WeeJeWel/node-ledctrl/issues"
+  },
+  "bin": {
+    "ledctrl": "./bin/ledctrl.js"
+  },
+  "homepage": "https://github.com/WeeJeWel/node-ledctrl#readme",
+  "dependencies": {
+    "axios": "^0.16.1",
+    "commander": "^2.9.0",
+    "tinygradient": "^0.3.1"
+  }
+}
