@@ -38,7 +38,7 @@ program
 program
 	.command('gradient')
 	.description('Set a gradient on a LedCtrl device')
-	.option('-d, --device <id>', 'The LedCtrl device to send the gradient to. Use an asterisk (*) to send to all LedCtrl devices.')
+	.option('-d, --device <id>', 'The LedCtrl device (ID or name) to send the gradient to. Use an asterisk (*) to send to all LedCtrl devices.')
 	.option('-g, --gradient <colors>', 'Comma-seperated list of colors')
 	.action( cmd  => {
 		
@@ -59,7 +59,7 @@ program
 program
 	.command('effect')
 	.description('Set an effect on a LedCtrl device')
-	.option('-d, --device <id>', 'The LedCtrl device to send the effect to. Use an asterisk (*) to send to all LedCtrl devices.')
+	.option('-d, --device <id>', 'The LedCtrl device (ID or name) to send the effect to. Use an asterisk (*) to send to all LedCtrl devices.')
 	.option('-e, --effect <effect>', 'Name of the effect')
 	.action( cmd  => {
 		
@@ -80,7 +80,7 @@ program
 program
 	.command('brightness')
 	.description('Set the brightness on a LedCtrl device')
-	.option('-d, --device <id>', 'The LedCtrl device to send the brightness to. Use an asterisk (*) to send to all LedCtrl devices.')
+	.option('-d, --device <id>', 'The LedCtrl device (ID or name) to send the brightness to. Use an asterisk (*) to send to all LedCtrl devices.')
 	.option('-b, --brightness <value>', 'Value of the brightness (0-255)')
 	.action( cmd  => {
 		
@@ -101,7 +101,7 @@ program
 program
 	.command('name')
 	.description('Set the name of a LedCtrl device')
-	.option('-d, --device <id>', 'The LedCtrl device to send the brightness to. Use an asterisk (*) to send to all LedCtrl devices.')
+	.option('-d, --device <id>', 'The LedCtrl device (ID or name) to send the brightness to. Use an asterisk (*) to send to all LedCtrl devices.')
 	.option('-n, --name <value>', 'The new name (max 30 characters)')
 	.action( cmd  => {
 		
@@ -122,7 +122,7 @@ program
 program
 	.command('numpixels')
 	.description('Set the number of pixels of a LedCtrl device')
-	.option('-d, --device <id>', 'The LedCtrl device to send the brightness to. Use an asterisk (*) to send to all LedCtrl devices.')
+	.option('-d, --device <id>', 'The LedCtrl device (ID or name) to send the brightness to. Use an asterisk (*) to send to all LedCtrl devices.')
 	.option('-p, --pixels <value>', 'The amount of pixels')
 	.action( cmd  => {
 		
@@ -143,7 +143,7 @@ program
 program
 	.command('restart')
 	.description('Restart a LedCtrl device')
-	.option('-d, --device <id>', 'The LedCtrl device to send the brightness to. Use an asterisk (*) to send to all LedCtrl devices.')
+	.option('-d, --device <id>', 'The LedCtrl device (ID or name) to send the brightness to. Use an asterisk (*) to send to all LedCtrl devices.')
 	.action( cmd  => {
 		
 		let discovery = new LCDiscovery();

@@ -28,7 +28,13 @@ $ ledctrl -h
 
 For example:
 
-`$ ledctrl gradient --device "TV" --gradient "FF0000,00FF00,0000FF"`
+```bash
+$ ledctrl gradient --device "TV" --gradient "FF0000,00FF00,0000FF"
+$ ledctrl effect --device "*" --effect "rainbow"
+$ ledctrl gradient --help
+$ ledctrl effect --help
+...
+```
 
 ## Module usage
 
