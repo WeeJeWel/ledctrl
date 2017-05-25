@@ -4,6 +4,12 @@ This is a Node.js module & CLI module to control [LedCtrl](http://www.ledctrl.eu
 
 ## Command-line usage
 
+### Installation
+```bash
+npm install -g ledctrl
+```
+
+### Usage
 
 ```bash
 $ ledctrl -h
