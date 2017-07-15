@@ -36,6 +36,27 @@ program
 	})
 	
 program
+	.command('on')
+	.description('Turn a LedCtrl device on or off')
+	.option('-d, --device <id>', 'The LedCtrl device (ID or name) to send the gradient to. Use an asterisk (*) to send to all LedCtrl devices.')
+	.option('-o, --on <true|false>', '')
+	.action( cmd  => {
+		
+		let discovery = new LCDiscovery();
+			discovery
+				.on('device', device => {
+					
+					if( !(device.id === cmd.device || device.name === cmd.device || cmd.device === '*' ) ) return;
+					
+					device.setOn(cmd.on === 'true')
+						.then(console.log.bind( this, '[log]', 'setOn', device.id))
+						.catch(console.error.bind( this, '[err]', 'setOn', device.id));
+				})
+				.search()
+				.catch( console.error )
+	});
+	
+program
 	.command('gradient')
 	.description('Set a gradient on a LedCtrl device')
 	.option('-d, --device <id>', 'The LedCtrl device (ID or name) to send the gradient to. Use an asterisk (*) to send to all LedCtrl devices.')
