@@ -1,3 +1,7 @@
+# DEPRECATED
+
+Moved to: [node-luxio](https://github.com/WeeJeWel/node-luxio)
+
 # LedCtrl
 
 This is a Node.js module & CLI module to control [LedCtrl](http://www.ledctrl.eu) devices (Wi-Fi Digital LED strips).
